@@ -1,0 +1,236 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>How to setup SSH server on Debian</title>
+    <meta name="description" content="A post about how to setup SSH server on Debian Linux or derivatives which shows step-by-step commands.">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/screen.css?v=33bf2addcf">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://blog.ankitrgadiya.me/2016/05/15/setup-ssh-server-on-debian/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="http://blog.ankitrgadiya.me/2016/05/15/setup-ssh-server-on-debian/amp/">
+    
+    <meta property="og:site_name" content="Ankit's Blog">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How to setup SSH server on Debian">
+    <meta property="og:description" content="A post about how to setup SSH server on Debian Linux or derivatives which shows step-by-step commands.">
+    <meta property="og:url" content="http://blog.ankitrgadiya.me/2016/05/15/setup-ssh-server-on-debian/">
+    <meta property="article:published_time" content="2016-05-15T09:28:00.000Z">
+    <meta property="article:modified_time" content="2016-11-01T19:32:36.000Z">
+    <meta property="article:tag" content="#Tutorial">
+    <meta property="article:tag" content="#Linux">
+    <meta property="article:tag" content="#Debian">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/ankit.r.gadiya">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="How to setup SSH server on Debian">
+    <meta name="twitter:description" content="A post about how to setup SSH server on Debian Linux or derivatives which shows step-by-step commands.">
+    <meta name="twitter:url" content="http://blog.ankitrgadiya.me/2016/05/15/setup-ssh-server-on-debian/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Ankit R Gadiya">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="#Tutorial, #Linux, #Debian">
+    <meta name="twitter:site" content="@ankit4922">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Ankit&#x27;s Blog",
+        "logo": "http://blog.ankitrgadiya.me/content/images/2016/12/Logo.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Ankit R Gadiya",
+        "image": "//www.gravatar.com/avatar/8e2fb1a800d44d30e290211f670dfc2a?s=250&d=mm&r=x",
+        "url": "http://blog.ankitrgadiya.me/author/ankit/",
+        "sameAs": []
+    },
+    "headline": "How to setup SSH server on Debian",
+    "url": "http://blog.ankitrgadiya.me/2016/05/15/setup-ssh-server-on-debian/",
+    "datePublished": "2016-05-15T09:28:00.000Z",
+    "dateModified": "2016-11-01T19:32:36.000Z",
+    "keywords": "#Tutorial, #Linux, #Debian",
+    "description": "A post about how to setup SSH server on Debian Linux or derivatives which shows step-by-step commands.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://blog.ankitrgadiya.me"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.11">
+    <link rel="alternate" type="application/rss+xml" title="Ankit's Blog" href="http://blog.ankitrgadiya.me/rss/">
+</head>
+<body class="post-template tag-tutorial tag-linux tag-debian nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://ankitrgadiya.me">Home</a></li>
+            <li class="nav-blog" role="presentation"><a href="http://blog.ankitrgadiya.me/">Blog</a></li>
+            <li class="nav-github" role="presentation"><a href="http://github.com/ankitrgadiya">Github</a></li>
+    </ul>
+        <a class="subscribe-button icon-feed" href="http://blog.ankitrgadiya.me/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="blog-logo" href="http://blog.ankitrgadiya.me"><img src="../../../../content/images/2016/12/Logo.png" alt="Ankit's Blog"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-tutorial tag-linux tag-debian">
+
+        <header class="post-header">
+            <h1 class="post-title">How to setup SSH server on Debian</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2016-05-15">15 May 2016</time>  on <a href="../../../../tag/tutorial/">#Tutorial</a>, <a href="../../../../tag/linux/">#Linux</a>, <a href="../../../../tag/debian/">#Debian</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>This is a tutorial for setting up SSH server on Debian or distros based on Debain.</p>
+
+<h6 id="steps">Steps:</h6>
+
+<ul>
+<li>Install the openssh-server package.</li>
+</ul>
+
+<pre><code class="language-bash">$ sudo apt-get install openssh-server
+</code></pre>
+
+<ul>
+<li>Configure it to start at boot.</li>
+</ul>
+
+<pre><code class="language-bash">$ sudo update-rc.d -f ssh remove
+$ sudo update-rc.d -f ssh defaults
+$ sudo update-rc.d -f ssh enable 2 3 4 5
+</code></pre>
+
+<ul>
+<li>For more security, you can change the default keys.</li>
+</ul>
+
+<pre><code class="language-bash">$ cd /etc/ssh
+$ sudo mkdir keys_orig
+$ sudo mv ssh_host_* keys_orig
+</code></pre>
+
+<ul>
+<li>Now, generate new keys.</li>
+</ul>
+
+<pre><code class="language-bash">$ sudo dpkg-reconfigure openssh-server
+</code></pre>
+
+<ul>
+<li>For more customisation, you can edit the sshd_config file.</li>
+</ul>
+
+<pre><code class="language-bash">$ gedit /etc/ssh/sshd_config
+</code></pre>
+
+<ul>
+<li>After all the changes restart ssh service.</li>
+</ul>
+
+<pre><code class="language-bash">$ sudo service ssh restart
+</code></pre>
+
+<ul>
+<li>Done!</li>
+</ul>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../../../../author/ankit/" style="background-image: url(http://www.gravatar.com/avatar/8e2fb1a800d44d30e290211f670dfc2a?s&amp;)"><span class="hidden">Ankit R Gadiya's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../../../../author/ankit/">Ankit R Gadiya</a></h4>
+
+                    <p>Read <a href="../../../../author/ankit/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=How%20to%20setup%20SSH%20server%20on%20Debian&amp;url=http://blog.ankitrgadiya.me/2016/05/15/setup-ssh-server-on-debian/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.ankitrgadiya.me/2016/05/15/setup-ssh-server-on-debian/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://blog.ankitrgadiya.me/2016/05/15/setup-ssh-server-on-debian/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story no-cover" href="../../24/hack-an-android-using-metasploit-framework/">
+        <section class="post">
+            <h2>How to hack an Android using Metasploit Framework</h2>
+            <p>This is a tutorial for hacking an android using Metasploit Framework. Note: This tutorial is for educational purposes I'm…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev no-cover" href="../../../04/25/gnome-asia-summit-2016-part-ii/">
+        <section class="post">
+            <h2>GNOME Asia Summit 2016 Part II</h2>
+            <p>Writing this a little late, as I stayed few more days in Delhi. It was very interesting and exciting.…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://blog.ankitrgadiya.me">Ankit's Blog</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+    <script type="text/javascript" src="../../../../assets/js/jquery.fitvids.js?v=33bf2addcf"></script>
+    <script type="text/javascript" src="../../../../assets/js/index.js?v=33bf2addcf"></script>
+
+</body>

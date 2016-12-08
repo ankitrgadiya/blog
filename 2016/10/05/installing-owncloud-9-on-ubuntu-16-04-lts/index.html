@@ -1,0 +1,247 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Installing Owncloud 9 on Ubuntu 16.04 LTS</title>
+    <meta name="description" content="A Post describing briefly about Owncloud and then a step-by-step guide to install it on Ubuntu Server.">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/screen.css?v=33bf2addcf">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://blog.ankitrgadiya.me/2016/10/05/installing-owncloud-9-on-ubuntu-16-04-lts/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="http://blog.ankitrgadiya.me/2016/10/05/installing-owncloud-9-on-ubuntu-16-04-lts/amp/">
+    
+    <meta property="og:site_name" content="Ankit's Blog">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Installing Owncloud 9 on Ubuntu 16.04 LTS">
+    <meta property="og:description" content="A Post describing briefly about Owncloud and then a step-by-step guide to install it on Ubuntu Server.">
+    <meta property="og:url" content="http://blog.ankitrgadiya.me/2016/10/05/installing-owncloud-9-on-ubuntu-16-04-lts/">
+    <meta property="article:published_time" content="2016-10-05T17:27:00.000Z">
+    <meta property="article:modified_time" content="2016-11-01T20:33:11.000Z">
+    <meta property="article:tag" content="#Tutorial">
+    <meta property="article:tag" content="#Linux">
+    <meta property="article:tag" content="#Ubuntu">
+    <meta property="article:tag" content="#Owncloud">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/ankit.r.gadiya">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Installing Owncloud 9 on Ubuntu 16.04 LTS">
+    <meta name="twitter:description" content="A Post describing briefly about Owncloud and then a step-by-step guide to install it on Ubuntu Server.">
+    <meta name="twitter:url" content="http://blog.ankitrgadiya.me/2016/10/05/installing-owncloud-9-on-ubuntu-16-04-lts/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Ankit R Gadiya">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="#Tutorial, #Linux, #Ubuntu, #Owncloud">
+    <meta name="twitter:site" content="@ankit4922">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Ankit&#x27;s Blog",
+        "logo": "http://blog.ankitrgadiya.me/content/images/2016/12/Logo.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Ankit R Gadiya",
+        "image": "//www.gravatar.com/avatar/8e2fb1a800d44d30e290211f670dfc2a?s=250&d=mm&r=x",
+        "url": "http://blog.ankitrgadiya.me/author/ankit/",
+        "sameAs": []
+    },
+    "headline": "Installing Owncloud 9 on Ubuntu 16.04 LTS",
+    "url": "http://blog.ankitrgadiya.me/2016/10/05/installing-owncloud-9-on-ubuntu-16-04-lts/",
+    "datePublished": "2016-10-05T17:27:00.000Z",
+    "dateModified": "2016-11-01T20:33:11.000Z",
+    "keywords": "#Tutorial, #Linux, #Ubuntu, #Owncloud",
+    "description": "A Post describing briefly about Owncloud and then a step-by-step guide to install it on Ubuntu Server.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://blog.ankitrgadiya.me"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.11">
+    <link rel="alternate" type="application/rss+xml" title="Ankit's Blog" href="http://blog.ankitrgadiya.me/rss/">
+</head>
+<body class="post-template tag-tutorial tag-linux tag-ubuntu tag-owncloud nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://ankitrgadiya.me">Home</a></li>
+            <li class="nav-blog" role="presentation"><a href="http://blog.ankitrgadiya.me/">Blog</a></li>
+            <li class="nav-github" role="presentation"><a href="http://github.com/ankitrgadiya">Github</a></li>
+    </ul>
+        <a class="subscribe-button icon-feed" href="http://blog.ankitrgadiya.me/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="blog-logo" href="http://blog.ankitrgadiya.me"><img src="../../../../content/images/2016/12/Logo.png" alt="Ankit's Blog"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-tutorial tag-linux tag-ubuntu tag-owncloud">
+
+        <header class="post-header">
+            <h1 class="post-title">Installing Owncloud 9 on Ubuntu 16.04 LTS</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2016-10-05">05 October 2016</time>  on <a href="../../../../tag/tutorial/">#Tutorial</a>, <a href="../../../../tag/linux/">#Linux</a>, <a href="../../../../tag/ubuntu/">#Ubuntu</a>, <a href="../../../../tag/owncloud/">#Owncloud</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <h4 id="clouds">Clouds</h4>
+
+<p>Most of the modern users now-a-days store there data on cloud storage. Cloud storages generally give some free space to everyone and they charge for more storages. Common cloud storage providers include Google Drive, One Drive, DropBox. Generally you get around 10-15GB storage for free.</p>
+
+<h4 id="owncloud">Owncloud</h4>
+
+<p>Owncloud is kinda replacement for cloud storages which you can host on your own servers. Its free and open-source. Also as you're hosting on your own servers so you don't have to worry about safety. And you can store as much data as your server supports. So, no limitation.</p>
+
+<p>Basically, it is a software which will run on your server and provides a cloud experience. It can be installed on both Windows servers and Linux based servers.</p>
+
+<h6 id="howtoinstallowncloudonubuntu">How to install Owncloud on Ubuntu</h6>
+
+<ul>
+<li>Install apache and mysql packagges.</li>
+</ul>
+
+<pre><code class="language-bash">$ sudo apt-get install apache2 mysql-server
+</code></pre>
+
+<ul>
+<li>Owncloud is not available in Ubuntu repositories but Owncloud maintain a repository for Ubuntu. We have to add the repository.</li>
+</ul>
+
+<pre><code class="language-bash">$ curl https://download.owncloud.org/download/repositories/stable/Ubuntu_16.04/Release.key | sudo apt-key add -
+$ echo 'deb http://download.owncloud.org/download/repositories/stable/Ubuntu_16.04/ /' | sudo tee /etc/apt/sources.list.d/owncloud.list 
+$ sudo apt-get update
+</code></pre>
+
+<ul>
+<li>Install Owncloud packages</li>
+</ul>
+
+<pre><code class="language-bash">$ sudo apt-get install owncloud
+</code></pre>
+
+<ul>
+<li>Configure MySQL Database</li>
+</ul>
+
+<pre><code class="language-bash">$ mysql -u root -p
+Enter password:  
+mysql&gt; CREATE DATABASE owncloud;  
+Query OK, 1 row affected(0.00 sec)  
+mysql&gt; GRANT ALL ON owncloud.* to 'owncloud'@'localhost' IDENTIFIED BY 'password';  
+Query OK, 0 rows affected, 1 warning(0.10 sec)  
+mysql&gt; FLUSH PRIVILEGES;  
+QUERY OK, 0 rows affected(0.00 sec)  
+mysql&gt;exit;  
+</code></pre>
+
+<ul>
+<li><p>Setup Owncloud</p>
+
+<ul><li>Open browser</li>
+<li>Go to localhost/owncloud</li>
+<li>Create admin accound</li>
+<li>Scroll down and choose MySQL database</li>
+<li>Enter Database information</li>
+<li>Click Finish</li></ul></li>
+<li><p>Done!</p></li>
+</ul>
+
+<iframe width="1920" height="1080" src="https://www.youtube.com/embed/BLte3NRYxjI?rel=0" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../../../../author/ankit/" style="background-image: url(http://www.gravatar.com/avatar/8e2fb1a800d44d30e290211f670dfc2a?s&amp;)"><span class="hidden">Ankit R Gadiya's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../../../../author/ankit/">Ankit R Gadiya</a></h4>
+
+                    <p>Read <a href="../../../../author/ankit/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Installing%20Owncloud%209%20on%20Ubuntu%2016.04%20LTS&amp;url=http://blog.ankitrgadiya.me/2016/10/05/installing-owncloud-9-on-ubuntu-16-04-lts/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.ankitrgadiya.me/2016/10/05/installing-owncloud-9-on-ubuntu-16-04-lts/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://blog.ankitrgadiya.me/2016/10/05/installing-owncloud-9-on-ubuntu-16-04-lts/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story no-cover" href="../../../12/08/google-code-in-2016-day-1/">
+        <section class="post">
+            <h2>Google Code-in 2016 Day #1</h2>
+            <p>Google Code-in Google Code-in is a contest sponsored by Google to encourage pre-university students to know about open-source Projects…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev no-cover" href="../../../09/18/blogging-platforms/">
+        <section class="post">
+            <h2>Blogging Platforms</h2>
+            <p>I started blogging last year in December. Since then I've switched between a lot of platforms. I'm going to…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://blog.ankitrgadiya.me">Ankit's Blog</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+    <script type="text/javascript" src="../../../../assets/js/jquery.fitvids.js?v=33bf2addcf"></script>
+    <script type="text/javascript" src="../../../../assets/js/index.js?v=33bf2addcf"></script>
+
+</body>
