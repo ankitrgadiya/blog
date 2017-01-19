@@ -1,0 +1,27 @@
+# Blog settings
+permalink: /:title
+
+
+# My variables
+name: Ankit's Blog
+description: The personal blog of Ankit R Gadiya
+google_verification: null
+
+
+# File management
+include: [".htaccess"]
+exclude: ["README.md", "LICENSE"]
+
+
+# Sass
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge

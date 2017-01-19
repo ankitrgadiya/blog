@@ -1,3 +1,0 @@
-User-agent: *
-Sitemap: http://blog.ankitrgadiya.me/sitemap.xml
-Disallow: /ghost/
