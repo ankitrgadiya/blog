@@ -1,11 +1,11 @@
 # Blog settings
 permalink: /:title
-
+url: https://blog.ankitrgadiya.in
 
 # My variables
 name: Ankit's Blog
 description: The personal blog of Ankit R Gadiya
-google_verification: null
+google_verification: d-betUTe-rYNnjpdDvm56ohoagIClOGA70fnHKYU4ec
 
 
 # File management
