@@ -1,5 +1,5 @@
 # Blog settings
-permalink: /:title
+permalink: /:title/
 url: https://blog.ankitrgadiya.in
 
 # My variables
