@@ -1,6 +1,7 @@
 ---
 layout: post
 title: My exprience with Linux
+description: A journey of starting to use Linux and getting familiar with it.
 ---
 Over two months passed since my last post. And this time too I'll promise myself to update this blog ASAP.
 

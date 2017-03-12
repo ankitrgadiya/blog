@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Installing Owncloud 9 on Ubuntu 16.04 LTS
+description: A tutorial for installing Owncloud on Ubuntu Server.
 ---
 ## Clouds
 

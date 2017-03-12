@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Arch Linux Installation
+description: A Step-by-step guide to install Archlinux.
 ---
 
 This is a Step-by-step tutorial for installing Arch Linux.

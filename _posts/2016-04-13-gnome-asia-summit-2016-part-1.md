@@ -1,6 +1,7 @@
 ---
 layout: post
 title: GNOME Asia Summit 2016 Part I
+description: A journey of how Ankit started using Linux and how he came to know about Gnome.
 ---
 
 

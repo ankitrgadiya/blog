@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Blogging Platforms
+description: Major blogging platforms and Ankit's experience with them.
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to hack an Android Device
+description: A tutorial for hacking an android device using Metasploit Framework on Kali Linux.
 ---
 
 This is a tutorial for hacking an android using Metasploit Framework.
