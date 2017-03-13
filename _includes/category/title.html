@@ -1,4 +1,4 @@
-{% for category in site.data.categories %}
+{% for category in site.data.all-categories %}
   {% if category.slug == page.category %}
     {% assign category_name =  category.name %}
   {% endif %}
