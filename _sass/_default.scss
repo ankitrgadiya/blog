@@ -5,6 +5,14 @@ body {
     background-color: $dorian;
 }
 
+/* Logo */
+.logo-img {
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+}
 a {
     color: $cloudy;
     font-weight: bold;
