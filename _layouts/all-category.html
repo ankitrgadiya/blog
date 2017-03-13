@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% for category in site.data.categories %}
+  {% if category.slug == page.category %}
+    {% assign category_name =  category.name %}
+  {% endif %}
+{% endfor %}
+
+<h1 class="page-title">
+    <div class="page-title__text">All Categories</div>
+</h1>
+
+<ul class="list-posts">
+
+    {% for category in site.data.all-categories %}
+            <li class="post-teaser">
+                <a href="{{ category.url | prepend: site.baseurl }}">
+                    <span class="post-teaser__title">{{ category.name }}</span>
+                </a>
+            </li>
+    {% endfor %}
+</ul>
+
+{% include page/explore.html %}

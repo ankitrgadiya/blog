@@ -1,7 +1,10 @@
 ---
 layout: post
-title: Arch Linux Installation
-description: A Step-by-step guide to install Archlinux.
+title: "Arch Linux Installation"
+date: 2016-09-06
+subtitle: "A Step-by-step guide to install Archlinux."
+categories: [tutorial, linux, 2016]
+permalink: /arch-linux-install/
 ---
 
 This is a Step-by-step tutorial for installing Arch Linux.

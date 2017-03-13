@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Installing Owncloud 9 on Ubuntu 16.04 LTS
-description: A tutorial for installing Owncloud on Ubuntu Server.
+title: "Installing Owncloud 9 on Ubuntu 16.04 LTS"
+date: 2016-10-05
+subtitle: "A tutorial for installing Owncloud on Ubuntu Server."
+categories: [foss, tutorial, 2016]
+permalink: /install-owncloud-on-ubuntu/
 ---
 ## Clouds
 
-<br />
 Most of the modern users now-a-days store there data on cloud storage. Cloud storages generally give some free space to everyone and they charge for more storages. Common cloud storage providers include Google Drive, One Drive, DropBox. Generally you get around 10-15GB storage for free.
 
 ## Owncloud
 
-<br />
 Owncloud is kinda replacement for cloud storages which you can host on your own servers. Its free and open-source. Also as you're hosting on your own servers so you don't have to worry about safety. And you can store as much data as your server supports. So, no limitation.
 
 Basically, it is a software which will run on your server and provides a cloud experience. It can be installed on both Windows servers and Linux based servers.
 
 ## How to install Owncloud on Ubuntu
 
-<br />
 * Install apache and mysql packagges.
 ```bash
 $ sudo apt-get install apache2 mysql-server

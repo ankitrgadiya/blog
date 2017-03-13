@@ -1,7 +1,10 @@
 ---
 layout: post
-title: GNOME Asia Summit 2016 Part II
-description: A brief description of Gnome.Asia summit 2016 and experiences of Ankit.
+title: "GNOME Asia Summit 2016 Part II"
+date: 2016-04-25
+subtitle: "My experience at Gnome Asia Summit 2016."
+categories: [gnome, 2016]
+permalink: /gnome-asia-summit-2016-part-2/
 ---
 
 Writing this a little late, as I stayed few more days in Delhi.

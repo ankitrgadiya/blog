@@ -1,7 +1,10 @@
 ---
 layout: post
-title: Github Student Developer Pack
-description: A description about Github Student Developer Pack and tools which comes with it.
+title: "Github Student Developer Pack"
+date: 2016-05-27
+subtitle: "A description about Github Student Developer Pack and tools which comes with it."
+categories: [2016]
+permalink: /github-student-developer-pack/
 ---
 Last night I was going through my mails and there was one from Github. They accepted my request for Student Developer Pack. This pack include a lot of freebies and free tools, those which can be used by students to create an online presence, and start developing cool stuff.
 

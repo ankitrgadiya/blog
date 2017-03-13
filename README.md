@@ -3,12 +3,13 @@ This is repository for my [blog](https://blog.ankitrgadiya.in).
 
 
 A simple jekyll based blog template for static blogs. Its very light-weight and fast.
-[Demo](https://ankitrgadiya.github.io/blog)
 
-This is a customised version of [this project](https://github.com/getmicah/blog).
+This is a customised version of [this project](https://github.com/kronik3r/daktilo).
 
 # Credits:
-* Original author: [Micah Cowell](https://github.com/getmicah)
+* Original author: [Motaquillah Maddane](https://github.com/kronik3r)
+* Contributors: [Pavel D.](https://github.com/pavdmyt), [Anshul Chauhan](https://github.com/anshulc95)
 
-### License
-All this stuff is under the [MIT License](https://raw.githubusercontent.com/getmicah/getmicah.github.io/master/LICENSE)
+# License
+
+The contents of this repository is licensed under [The MIT License.](https://opensource.org/licenses/MIT)

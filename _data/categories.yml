@@ -1,0 +1,11 @@
+- slug: tutorial
+  name: Tutorial
+
+- slug: foss
+  name: FOSS
+
+- slug: review
+  name: Review
+
+- slug: gci-16
+  name: Google Code-in 2016

@@ -1,7 +1,10 @@
 ---
 layout: post
-title: How to setup SSH server on Debian
-description: A tutorial to setup and configure SSH server on Debian machines.
+title: "How to setup SSH server on Debian"
+date: 2016-05-15
+subtitle: "A tutorial to setup and configure SSH server on Debian machines."
+categories: [tutorial, 2016]
+permalink: /setup-ssh-server-on-debian/
 ---
 
 This is a tutorial for setting up SSH server on Debian or distros based on Debain.

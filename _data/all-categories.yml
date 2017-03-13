@@ -1,0 +1,23 @@
+- url: /categories/tutorial
+  name: Tutorial
+
+- url: /categories/foss
+  name: FOSS
+
+- url: /categories/linux
+  name: Linux
+
+- url: /categories/gnome
+  name: Gnome
+
+- url: /categories/review
+  name: Review
+
+- url: /categories/gci-16
+  name: Google Code-in 2016
+
+- url: /categories/2016
+  name: 2016
+
+- url: /categories/2017
+  name: 2017
