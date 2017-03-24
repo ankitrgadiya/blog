@@ -7,7 +7,7 @@ permalink: /about/
 ## About Me
 
 I'm [Ankit R Gadiya](https://ankitrgadiya.in), 17, Programmer and Linux
-Enthusiast. To go [Home](https://ankitrgadiya.in) to know more.
+Enthusiast. Go to [Home](https://ankitrgadiya.in) to know more.
 
 
 ## Blog
