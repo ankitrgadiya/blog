@@ -1,0 +1,128 @@
+/* Header */
+header.jumbotron {
+  font-family:  'Inconsolata', monospace;
+  background: white;
+}
+header.jumbotron h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 10vh;
+}
+header.jumbotron img.logo {
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+}
+header.jumbotron .navigation {
+  margin-top: 20vh;
+}
+header.jumbotron .navigation ul li {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+header.jumbotron .navigation ul li.active {
+  padding-bottom: 5px;
+  border-bottom: 3px black solid;
+}
+header.jumbotron .navigation ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Posts body */
+.container.body {
+  font-family: 'Inconsolata', monospace;
+}
+.container.body .posts .title {
+  margin-bottom: 80px;
+}
+.container.body .posts h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.container.body .posts h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.container.body .posts h2 a {
+  color: #212121;
+  text-decoration: none;
+}
+.container.body .posts h3 {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+.container.body .posts p {
+  font-size: 1.5em;
+}
+.container.body .posts p em {
+  font-size: 1em;
+}
+.container.body .posts pre code {
+  font-size: 1.2em;
+}
+.container.body .posts ul li {
+  font-size: 1.5em;
+}
+.container.body .posts ul li p {
+  font-size: 1em;
+}
+.container.body .posts ul li > ul li {
+  font-size: 1em;
+}
+.container.body .posts .home {
+  color: black;
+  text-decoration: none;
+}
+.container.body .posts .panel {
+  margin-top: 5vh;
+}
+.container.body .posts .panel .panel-heading {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.container.body .posts .panel .panel-body h3 {
+  font-size: 1.5em;
+}
+.container.body .posts .panel .panel-body ul li {
+  font-size: 1.5em;
+}
+.container.body .posts table.table {
+  font-size: 1.5em;
+}
+
+/* Footer */
+footer.jumbotron {
+  background: white;
+  margin-bottom: 0;
+  font-family: 'Inconsolata', monospace;
+}
+footer.jumbotron p {
+  font-size: 1.3em;
+}
+footer.jumbotron .social ul li {
+  font-size: 1.5em;
+}
+footer.jumbotron .social ul li a {
+  text-decoration: none;
+}
+footer.jumbotron .sitemap {
+  text-align: center;
+}
+footer.jumbotron .sitemap ul {
+  display: inline-block;
+  text-align: left;
+}
+footer.jumbotron .sitemap ul li {
+  font-size: 1.2em;
+}
+
+p.error {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5em;
+  margin-bottom: 5vh;
+}

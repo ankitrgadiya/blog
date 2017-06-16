@@ -3,7 +3,7 @@ layout: post
 title: "Installing Owncloud 9 on Ubuntu 16.04 LTS"
 date: 2016-10-05
 subtitle: "A tutorial for installing Owncloud on Ubuntu Server."
-categories: [foss, tutorial, 2016]
+tags: foss tutorial
 permalink: /install-owncloud-on-ubuntu/
 ---
 ## Clouds
@@ -58,4 +58,6 @@ mysql>exit;
   * Click Finish
 
 * Done!
-<iframe width="640" height="360" src="https://www.youtube.com/embed/BLte3NRYxjI?rel=0" frameborder="0" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+	<iframe width="640" height="360" src="https://www.youtube.com/embed/BLte3NRYxjI?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>

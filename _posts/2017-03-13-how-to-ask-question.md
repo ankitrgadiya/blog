@@ -3,7 +3,7 @@ layout: post
 title: "How to ask questions"
 date: 2017-03-13
 subtitle: "How to efficiently ask questions in community chat rooms or forums."
-categories: [how-to, 2017]
+tags: how-to
 permalink: /how-to-ask-questions/
 ---
 

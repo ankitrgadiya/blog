@@ -3,7 +3,7 @@ layout: post
 title: "How to setup SSH server on Debian"
 date: 2016-05-15
 subtitle: "A tutorial to setup and configure SSH server on Debian machines."
-categories: [tutorial, 2016]
+tags: tutorial
 permalink: /setup-ssh-server-on-debian/
 ---
 

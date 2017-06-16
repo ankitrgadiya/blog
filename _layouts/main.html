@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+  <!-- Posts body -->
+  <div class="container body">
+    <div class="row posts">
+
+      {% for post in paginator.posts %}
+      <div class="col-md-8 col-md-offset-2">
+
+        <h2><a href="{{ post.url }}" class="text-left">{{ post.title }}</a></h2>
+        <p>{{ post.date | date: '%B %d, %Y' }}</p>
+
+        <p>{{ post.subtitle }}</p>
+
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+  <!-- Posts body ends here -->
+
+  <!-- Pagination -->
+  <div class="text-center">
+    <ul class="pagination">
+
+      {% if paginator.previous_page %}
+      <li><a href="{{paginator.previous_page_path}}" class="glyphicon glyphicon-chevron-left"></a></li>
+      <li><a href="{{paginator.previous_page_path}}" class="glyphicon">{{paginator.previous_page}}</a></li>
+      {% endif %}
+
+      <li class="active"><a href="#" class="glyphicon">{{paginator.page}}</a></li>
+      {% if paginator.next_page %}
+      <li><a href="{{paginator.next_page_path}}" class="glyphicon">{{paginator.next_page}}</a></li>
+      <li><a href="{{paginator.next_page_path}}" class="glyphicon glyphicon-chevron-right"></a></li>
+      {% endif %}
+
+    </ul>
+  </div>
+  <!-- Pagination ends here -->

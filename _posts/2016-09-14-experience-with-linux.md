@@ -3,7 +3,7 @@ layout: post
 title: "My exprience with Linux"
 date: 2016-09-14
 subtitle: "A journey of starting to use Linux and getting familiar with it."
-categories: [2016, foss, linux]
+tags: foss linux
 permalink: /experience-with-linux/
 ---
 

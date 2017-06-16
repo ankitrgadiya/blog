@@ -1,0 +1,43 @@
+---
+layout: default
+title: Archive
+permalink: /archive/
+---
+
+  <!-- Archive body -->
+  <div class="container body">
+    <div class="row posts">
+      <div class="col-md-8 col-md-offset-2">
+        <h2>Archive</h2>
+
+        {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+
+        {% for year in postsByYear %}
+
+          <div class="panel panel-default">
+
+            <div class="panel-heading">{{ year.name }}</div>
+
+            {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
+
+            {% for month in postsByMonth %}
+
+              <div class="panel-body">
+                <h3>{{ month.name }}</h2>
+                <ul>
+                  {% for post in month.items %}
+                  <li><a href="{{ post.url }}">{{ post.date | date: '%d' }} - {{ post.title }} </a></li>
+                  {% endfor %}
+                </ul>
+              </div>
+
+            {% endfor %}
+
+          </div>
+
+        {% endfor %}
+
+
+      </div>
+    </div>
+  <!-- Archive body ends here -->

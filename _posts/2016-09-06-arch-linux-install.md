@@ -3,7 +3,7 @@ layout: post
 title: "Arch Linux Installation"
 date: 2016-09-06
 subtitle: "A Step-by-step guide to install Archlinux."
-categories: [tutorial, linux, 2016]
+tags: tutorial linux
 permalink: /arch-linux-install/
 ---
 
@@ -16,8 +16,7 @@ But the installation process is little complicated as you don't get any GUI inst
 
 ## Steps:
 <br />
-* Download the Arch Linux iso from [here](https://www.archlinux.org/download/).
-
+* Download the Arch Linux iso from [here](https://www.archlinux.org/download/).<br />
 *Note: The iso is common for both 64 bit and 32 bit.*
 
 * Burn the iso into a CD or make a bootable usb from the iso downloaded and boot from it.

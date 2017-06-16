@@ -3,7 +3,7 @@ layout: post
 title: "How to setup git server"
 date: 2017-03-15
 subtitle: "A tutorial to set up personal git server with web interface"
-categories: [2017, how-to, tutorial, linux]
+tags: how-to tutorial linux
 permalink: /setup-git-server/
 ---
 
@@ -51,7 +51,7 @@ Note: I did this on my [Raspberry Pi 3](https://www.raspberrypi.org/) running on
 
 Its better to add a separate user for Git.
 
-```
+```bash
 $ adduser git
 sudo adduser git
 Adding user `git' ...
@@ -74,14 +74,14 @@ Is the information correct? [Y/n] y
 
 Then you need to install some packages for SSH server and Git web front-end.
 
-```
+```bash
 $ sudo apt-get install openssh-server cgit apache2
 ```
 
 Next you have to configure your SSH server disable login by password
 authentication.
 
-```
+```bash
 $ sudo vim /etc/ssh/sshd_config
 
 # Edit this
@@ -138,20 +138,20 @@ $ git init test.git --bare
 
 To show git repository on web, we need to add it in ```/etc/cgitrc``` file.
 
-```
+```bash
 $ vim /etc/cgitrc
 ```
 
 Following is the format to add a git repository in ```cgitrc```.
 
-```
+```bash
 # test
 repo.url=test
 repo.path=/home/git/test.git
 repo.owner=Ankit R Gadiya
 ```
 
-Once added you'll be able to see it at http://\<ip address or domain>/cgit.
+Once added you\'ll be able to see it at http://\<ip address or domain>/cgit.
 
 Done!
 
@@ -161,7 +161,7 @@ If this setup is going to be used by a lot of people, then you probably want to
 make sure, users cannot use shell with SSH, they can just perform git functions.
 To do this we will change the default Bash shell of git user with git-shell.
 
-```
+```bash
 $ sudo chsh -s /usr/bin/git-shell git
 ```
 
@@ -169,12 +169,12 @@ Although administrators still need default shell and still need to be able to
 login normally to add or remove git repositories. To do this you can use the
 following:
 
-```
+```bash
 $ sudo -u git -s
 ```
 
 If you are going to do this over and over again, add alias in .bashrc instead.
 
-```
+```bash
 $ echo "alias git-user='sudo -u git -s'" >> ~/.bashrc
 ```

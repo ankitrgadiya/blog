@@ -1,15 +1,38 @@
 # Blog
-This is repository for my [blog](https://blog.ankitrgadiya.in).
 
+This repository contains code of my [Blog](https://blog.ankitrgadiya.in)
 
-A simple jekyll based blog template for static blogs. Its very light-weight and fast.
+## File structure
+```bash
+.
+├── _layouts
+│   ├── default.html
+│   ├── main.html
+│   └── post.html
+│
+├── _posts
+│   └── Posts
+│
+├── assets
+│   ├── css
+│   │   └── main.css
+│   └── images
+│       └── logo.png
+│
+├── _config.yml
+├── index.html
+├── archive.html
+├── tags.html
+├── 404.html
+├── sitemap.xml
+├── Gemfile
+└── README.md
+```
 
-This is a customised version of [this project](https://github.com/kronik3r/daktilo).
+## Credits
 
-# Credits:
-* Original author: [Motaquillah Maddane](https://github.com/kronik3r)
-* Contributors: [Pavel D.](https://github.com/pavdmyt), [Anshul Chauhan](https://github.com/anshulc95)
+* Jekyll static site generator
+* Bootstrap Framework
+* Font-Awesome
 
-# License
-
-The contents of this repository is licensed under [The MIT License.](https://opensource.org/licenses/MIT)
+Proudly hosted on Github Pages.

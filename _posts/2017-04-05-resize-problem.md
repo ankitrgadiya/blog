@@ -3,7 +3,7 @@ layout: post
 title: "Resize Problem"
 date: 2017-04-06
 subtitle: "CS50 Pset4: Resize, my struggle with it."
-categories: [2017]
+tags: random
 permalink: /resize-problem/
 ---
 
@@ -62,7 +62,8 @@ times. Then we have to calculate New padding for new Bitmap file and add it to
 Outfile. Then we need to write this whole row "n" times in order to resize it
 vertically.
 
-![Horizontally Resized](/assets/images/resize/1.png)
+<img class="img-responsive" src="/assets/images/resize/1.png"
+alt="Horizontally Resized">
 
 I did the horizontal part very easily in 2-3 tries and padding was very simple
 to add as well. But the vertical resizing was the part that really pissed me
@@ -76,9 +77,12 @@ I went ahead with first method first. I tried implementing in a lot of ways.
 And got strange outputs, sometimes even the color changed, as I wrote some bytes
 which were not RGB triples.
 
-![Weird output 1](/assets/images/resize/2.png)
-![Weird output 2](/assets/images/resize/3.png)
-![Weird output 3](/assets/images/resize/4.png)
+<img class="img-responsive" src="/assets/images/resize/2.png"
+alt="Weird output 1">
+<img class="img-responsive" src="/assets/images/resize/3.png"
+alt="Weird output 2">
+<img class="img-responsive" src="/assets/images/resize/4.png"
+alt="Weird output 3">
 
 I kept chaning the code and logic, but it was no good. Once I even tried
 rewriting code, but that was no good either. The problem was that I was not sure
@@ -101,12 +105,14 @@ So, at first, for testing purposes, I used array with static size and a little
 complicated way to implement a for loop to write. It gave me something like this
 as output.
 
-![almost there](/assets/images/resize/5.png)
+<img class="img-responsive" src="/assets/images/resize/5.png"
+alt="Almost there">
 
 Then while going through the code, I realised there was some fundamental problem
 which can be resolved quite easily. And so finally after all this struggle,
 finally, I got this as output.
 
-![Final](/assets/images/resize/6.png)
+<img class="img-responsive" src="/assets/images/resize/6.png"
+alt="Final">
 
 And that's how I did it. Code that I wrote is [here](https://goo.gl/37xwHD).

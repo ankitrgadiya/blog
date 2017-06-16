@@ -3,7 +3,7 @@ layout: post
 title: "GNOME Asia Summit 2016 Part I"
 date: 2016-04-13
 subtitle: "How I came to know about Gnome and Gnome Asia Summit."
-categories: [gnome, 2016]
+tags: gnome
 permalink: /gnome-asia-summit-2016-part-1/
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "How to hack an Android Device"
 date: 2016-05-24
 subtitle: "A tutorial for hacking an android device using Metasploit Framework on Kali Linux."
-categories: [foss, tutorial, 2016]
+tags: foss tutorial
 permalink: /hack-an-android/
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Blogging Platforms"
 date: 2016-09-18
 subtitle: "Major blogging platforms and my experience with them."
-categories: [review, 2016]
+tags: review
 permalink: /blogging-platform/
 ---
 
